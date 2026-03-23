@@ -168,8 +168,13 @@ window.addEventListener('load', function () {
   if (document.querySelector('#slider')) {
     var splide = new Splide('#slider', {
       type: 'loop', perPage: 1, perMove: 1, autoplay: true, interval: 2000, 
-      pauseOnHover: false, pauseOnFocus: false, arrows: false, pagination: false, 
-      easing: 'cubic-bezier(0.25, 1, 0.5, 1)', speed: 2000
+      pauseOnHover: false, 
+      pauseOnFocus: false, 
+      arrows: false, 
+      pagination: false, 
+      drag:false,
+      easing: 'cubic-bezier(0.25, 1, 0.5, 1)', 
+      speed: 2000
     });
     splide.mount();
     splide.Components.Autoplay.play();

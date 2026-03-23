@@ -2276,3 +2276,32 @@ nav.active {
 .cart {
     z-index: 9999999 !important; /* أعلى طبقة في الموقع كله */
 }
+
+/* =========================================
+   Fixing Large Images & Mobile Overflow
+========================================= */
+
+@media (max-width: 767px) {
+    .photoss img, 
+    .photoss1 img, 
+    .photoss2 img, 
+    .imgs img {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block;
+        margin: 0 auto 15px !important;
+        position: relative !important;
+        left: auto !important;
+        right: auto !important;
+    }
+
+    .imgs .save, .photoss2 img:nth-of-type(2) {
+        max-width: 80px !important; */
+        margin-top: -30px !important; 
+    }
+
+    body, html {
+        overflow-x: hidden !important;
+        width: 100%;
+    }
+}

@@ -172,6 +172,8 @@ window.addEventListener('load', function () {
       pauseOnFocus: false, 
       arrows: false, 
       pagination: false, 
+      drag: false,
+      swipe:false,
       DragEvent:false,
       easing: 'cubic-bezier(0.25, 1, 0.5, 1)', 
       speed: 2000
